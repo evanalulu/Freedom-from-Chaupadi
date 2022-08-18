@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Freedom from Chaupadi</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>Freedom from Chaupadi</title>
+</head>
+
+<body>
+  <div class='container'>
+
+    <header id='header'>
+      <div>
+        <a href='index.html'>
+          <img class='logo' src='assets/logo2.png' alt="The logo for Freedom from Chhaupadi">
+        </a>
+      </div>
+
+      <nav>
+        <ul class='nav_links'>
+          <li><a href=#chaupadi>
+              Chaupadi
+            </a></li>
+          <li><a href=#about>
+              About Us
+            </a></li>
+          <li><a href=#contact>
+              Contact
+            </a></li>
+        </ul>
+      </nav>
+      <a class='cta' href=#donate>
+        <button a href="https://www.unfpa.org/donate?  form=General">Donate
+        </button>
+      </a>
+    </header>
+
+    <section id='home'>
+      <div class="video_container">
+        <video width="100%" muted autoplay loop playsinline data-object-fit="cover" data-autoplay="true">
+          <source src="assets/chaupadiVidFinal.mp4">
+        </video>
+        <div class='vidBtns'>
+          <a href=#chaupadi><button class='learnMoreBtn' id='learnMoreBtn'>Learn more</button></a>
+          <a href=#donate><button class='learnMoreBtn' id='learnMoreBtn'>Donate now</button></a>
+        </div>
+      </div>
+    </section>
+
+    <section id='chaupadi'>
+      <h1>What is Chaupadi?</h1>
+      <div class="chaupadi-container">
+        <div class="text">
+          <p>
+            During menstruation, rural Nepalese women are kept
+            away from their homes in a shed, called "chau" in
+            Nepali. Women are considered "impure" during their
+            menstruation. Women are unable to maintain their
+            menstrual hygiene because these chaus are more than
+            often unhygienic. In addition, menstruating women are
+            prohibited from participating in day-to-day
+            activities, social events and attending school.
+            Snake bites, cold winters and hot summers, rape
+            cases are only some of the events that take place in
+            these filthy huts.
+          </p>
+        </div>
+        <img src="assets/huts4.png" class="huts" alt="Women practicing chaupadi infront of their huts">
+      </div>
+    </section>
+
+    <section id='about'>
+      <h1>What Do We Do?</h1>
+      <p>
+      <div class="card-container">
+        <div class="card">
+          <div class="card-image card-1"></div>
+          <p class='card-text'>
+            Affording menstrual hygeine
+            can be expensive, especially in rural places of
+            Nepal. We distribute sanitary pads completely for
+            free in such areas.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-image card-2"></div>
+          <p class='card-text'>
+            It is difficult to explain to the community why
+            Chaupadi is a malpractice due to the
+            cultural importance it holds. We hold campaigns
+            in such areas to bring awareness among people.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-image card-3"></div>
+          <p class='card-text'>
+            Illiteracy can be considered the leading cause of
+            this social practice. We provide sex and
+            menstruation education in rural schools to
+            educate the younger generation.
+          </p>
+        </div>
+      </div>
+      </p>
+    </section>
+
+    <section id='contact'>
+      <h1>Contact Us</h1>
+      <div class="contact-container">
+        <form onsubmit="sendemail()">
+          <p class='contact-p'>Fill in the form below or contact us
+            directly by clicking <a href='mailto:info@freedomfromchaupadi.com'> here </a>.
+          <h3>GET IN TOUCH</h3>
+          <input type="text" id="nameE" class='input-contact' placeholder="Name" required>
+          <input type="email" id="email" placeholder="Email" required class='input-contact'>
+          <input type="text" id="phone" placeholder="Phone 
+          " required class='input-contact'>
+          <textarea id="messageE" rows="4" placeholder="How can we 
+          help you?" class='input-contact'></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <section id='donate'>
+      <h1>Want to Donate to Our Cause?</h1>
+      <p>Your small help can save thousands of innocent lives, so please put your hands together with us to make this
+        journey a revolutionary </p>
+      <span id="message"></span>
+      <button id='donateOpen'>DONATE NOW</button>
+      <p class='share'>Can't donate now? Help us by sharing this website!</p>
+      <ul class='shareLinks'>
+        <li>Copy link</li>
+        <li>Facebook</li>
+        <li>Instagram</li>
+        <li>Twitter</li>
+      </ul>
+    </section>
+
+    <div class='modal-container' id='modal_container'>
+      <div class='modal'>
+        <h2>Donate Now</h2>
+        <form action="">
+          <input type="text" placeholder='Name' class='input' id='name' required>
+          <input type="email" placeholder='E-Mail' class='input' required>
+          <input type="text" placeholder='Phone' class='input' required>
+          <input type="text" placeholder='Donation Amount' class='input' required>
+
+          <button class="close" id='donateClose'>Cancel</button>
+          <button class='submit' id='submit'>Submit</button>
+        </form>
+      </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+  </div>
+</body>
+
+</html>
